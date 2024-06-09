@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><span>TECH</span>TREASURE</h1>
+            </div>
+                <ul class="menu">
+                    <li class="nvb"><a href="index.html#home">Home</a></li>
+                    <li class="nvb"><a href="index.html#categories">Categories</a></li>
+                    <li class="nvb"><a href="index.html#products">Products</a></li>
+                    <li class="nvb"><a href="index.html#reviews">Reviews</a></li>
+                    <li class="nvb"><a href="index.html#contacts">Contact</a></li>
+                    <li class="nvb"><a href="index.html#about">About Us</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                    <input type="text" placeholder="Search..">    
+                    <a href="account.html"><i class="fa-solid fa-user"></i></a>
+                </ul>
+                <div class="menu-btn">
+                    <i class="fa fa-bars"></i>
+                </div>
+
+        </nav>
+    </header>
+
+    <section class="main">
+        <div class="header">
+            <i class="fas fa-shopping-cart"></i>
+            <h1>SHOPPING CART</h1>
+        </div>
+        <div class="items">
+            <div class="content" id="list">
+                <div class="item-content">
+                    <div class="items-list">
+                        <img src="images/mouse2.png" alt="Mouse Image">
+                        <div class="item-description">
+                            <h3>ErgoTCH ComfortMouse</h3>
+                            <h4>Computer Mouse</h4>
+                            <h5>₱1,200</h5>
+                        </div>
+                        <div class="buttons">
+                            <button>Save</button>
+                            <button>Delete</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item-content">
+                    <div class="items-list">
+                        <img src="images/gmae-controller.png" alt="Mouse Image">
+                        <div class="item-description">
+                            <h3>TCH GM ConZole Game</h3>
+                            <h4>Game Controller</h4>
+                            <h5>₱2,500</h5>
+                        </div>
+                        <div class="buttons">
+                            <button>Save</button>
+                            <button>Delete</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item-content">
+                    <div class="items-list">
+                        <img src="images/wireless-mouse-keyboard.png" alt="Keyboard Image">
+                        <div class="item-description">
+                            <h3>SpeedTCH GamingBRD</h3>
+                            <h4>Computer Keyboard</h4>
+                            <h5>₱2,500</h5>
+                        </div>
+                        <div class="buttons">
+                            <button>Save</button>
+                            <button>Delete</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item-content">
+                    <div class="items-list">
+                        <img src="images/computer3.png" alt="Monitor Image">
+                        <div class="item-description">
+                            <h3>UltraTCH MegaStation</h3>
+                            <h4>Desktop Computer</h4>
+                            <h5>₱75,000</h5>
+                        </div>
+                        <div class="buttons">
+                            <button>Save</button>
+                            <button>Delete</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+
+            
+            <div class="content" id="check">
+                <h2>Total Order</h2>
+                <p>₱81,200</p>
+                <h2>Shipping Fee</h2>
+                <p>₱120</p>
+                <h2>Total</h2>
+                <p>₱81,320</p>
+                <h2>Payment Methods</h2>
+                <div class="payment-methods">
+                    <img src="images/visa.jpg" alt="Visa Card">
+                    <img src="images/mastercard.png" alt="Mastercard">
+                    <img src="images/paypal.png" alt="PayPal">
+                    <img src="images/Apple-Pay-Logo.png" alt="Apple Pay">
+                    <img src="images/Google_Pay_Logo.svg.png" alt="Google Pay">
+                </div>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+            
+        </div>
+        
+    </section>
+</body>
+<script>
+    const menuBtn = document.querySelector('.menu-btn');
+        const menu = document.querySelector('.menu');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+</script>
+</html>

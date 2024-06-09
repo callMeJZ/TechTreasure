@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items:center; 
+    margin-left: -30px;
+}
+
+.logo span {
+    color: #352F44;
+    font-weight: 999;
+    font-size: 27px;
+}
+
+.logo h1 {
+    font-weight: 500;
+}
+
+header {
+    background-color: #dddddf;
+    
+}
+
+.navbar {
+    padding: 5px 3%;
+    display: flex;   
+}
+
+.navbar .menu {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+
+}
+
+.navbar .menu li a {
+    display: block;
+    margin-left: 10px;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #444242;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar .menu .nvb a:hover {
+    color: #ffffff;
+    padding: 5px 3px;
+    opacity: 0.9;
+}
+
+.navbar .menu i {
+    color:  #272626;
+    height: 20px;
+    width: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 20px;
+}
+
+.navbar .menu .fa-user {
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 5px;
+  font-size: 20px;
+  border-radius: 90%;
+}
+
+
+.navbar .menu i:hover {
+    color: #080808;
+}
+
+.navbar .menu input[type=text] {
+    font-size: 15px;
+    padding: 5px;
+    border: 2px solid #1d1b1b;
+    border-radius: 20px;
+    color: #303031;
+}
+
+.menu-btn {
+    color: #424144;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.main .header {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.main .header .fas.fa-shopping-cart {
+    font-size: 30px; 
+    color: black;     
+}
+
+.main .header h1 {
+    font-size: 40px;
+}
+
+.main .items {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.main .items .content {
+    width: 500px; 
+    background-color: rgba(201, 198, 198, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    overflow: auto;
+    margin-bottom: 20px; 
+    display: block;
+}
+
+.main .items .item-content {
+    margin-bottom: 30px; 
+   
+}
+
+
+.main .items #list {
+    width: 700px;
+}
+
+.main .items .items-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main .items .items-list img {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #0e0d0d;
+}
+
+.main .items .items-list .item-description {
+    margin-left: 10px;
+}
+
+.main .items .items-list h3 { 
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.main .items .items-list h4 { 
+    font-weight: 400;
+}
+
+.main .items .items-list h5 { 
+    margin-top: 5px;
+}
+
+.main .items .items-list .buttons {
+    margin-left: auto;
+}
+
+.main .items .items-list .buttons button { 
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 10px;
+    color: #ffffff;
+    background-color: #0e0d0d;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #2c2b2b;
+}
+
+.main .items .items-list .buttons button:hover { 
+    color: #0e0d0d;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 2px 2px 5px #f3efef;
+}
+
+#check {
+    background-color: rgba(201, 198, 198, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#check h2, #check p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#check p {
+    margin-left: 400px; 
+    margin-top: -30px;
+    margin-bottom: 40px;
+}
+
+.payment-methods img {
+    width: 50px; 
+    margin-right: 10px; 
+}
+
+.checkout-btn {
+    background-color: #0e0d0d;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.checkout-btn:hover {
+    background-color: #ffffff;
+    color: #0e0d0d;
+}
+
+@media (max-width: 768px) {
+
+    .navbar .menu {
+      display: none;
+      background: rgba( 176, 169, 169, 0.05 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 3px );
+      -webkit-backdrop-filter: blur( 3px );
+      border: 1px solid rgba( 255, 255, 255, 0.18 );  
+    }
+  
+    .menu-btn {
+      display: block;
+      margin-top: 9px;
+      margin-right: 2rem;
+    }
+  
+    .navbar .logo {
+        margin-right: 20rem;
+        margin-left: 10px;
+    }
+  
+    .menu-btn.active {
+      display: block;
+    }
+  
+    .menu-btn.active i::before {
+      content: "\f00d";
+    }
+  
+    .navbar .menu.active {
+      display: block;
+      position: absolute;
+      top: 80px;
+      left: 0px;
+      width: 100%;
+      background-color: #f3f4f6;
+      padding: 20px 0;
+      text-align: center;
+    }
+  
+    .navbar .menu.active li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .navbar .menu.active li a {
+      font-size: 18px;
+    }
+
+    .main .items .items-list .buttons button {
+        color: #fff; 
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 5px;
+        display: block;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .navbar .menu li a {
+        font-size: 16px;
+    }
+
+    .navbar .menu input[type=text] {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .main .items .items-list .buttons button {
+        color: #fff; 
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 5px;
+        display: block;
+    }
+    
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .navbar .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar .menu li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .navbar .menu li a {
+        font-size: 18px;
+    }
+
+    .navbar .menu input[type=text] {
+        width: 200px;
+    }
+    
+    .menu-btn {
+        display: none;
+    }
+    
+    .main .items .content {
+        width: 800px;
+    }
+    
+    .main .header h1 {
+        font-size: 40px;
+    }
+
+
+    
+}    
+    
