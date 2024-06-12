@@ -226,27 +226,6 @@ form a {
 }
 
 
-/* @media (max-width: 768px) { */
-    /* .navbar .menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px; 
-        left: 0;
-        width: 100%;
-        background: #dddddf; 
-        z-index: 100; 
-    }
-
-    .navbar .logo {
-        margin-left: 2%;
-        padding-right: 2%;
-    }
-
-    .menu-btn {
-        display: block;
-    } */
-
     @media (max-width: 768px) {
 
         .navbar .menu {
