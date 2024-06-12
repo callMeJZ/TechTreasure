@@ -126,12 +126,26 @@
         </div>
         
     </section>
-</body>
-<script>
-    const menuBtn = document.querySelector('.menu-btn');
-        const menu = document.querySelector('.menu');
-        menuBtn.addEventListener('click', () => {
-            menu.classList.toggle('active');
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(".menu-btn").click(function() {
+          $(".navbar .menu").toggleClass("active")
+          $(".menu-btn i").toggleClass("active")
         });
-</script>
+      
+        document.addEventListener("DOMContentLoaded", function() {
+          const navbar = document.querySelector(".navbar");
+      
+          window.addEventListener("scroll", function() {
+              if (window.scrollY > 50) { 
+                  navbar.classList.add("sticky");
+              } else {
+                  navbar.classList.remove("sticky");
+              }
+          });
+      });
+      </script>
+</body>
+
 </html>
